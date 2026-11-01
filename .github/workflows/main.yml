@@ -19,7 +19,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Run tests
-        run: python -m unittest discover -s tests -t .
+                run: python -m unittest discover -s tests
       - name: Fetch listings
         run: python -m rooted.ingest --employers data/employers.json --out site/data
       - name: Commit refreshed data
